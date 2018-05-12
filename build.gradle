@@ -1,0 +1,41 @@
+group 'org.gwtproject.cell'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    maven {
+        url "https://repo.vertispan.com/gwt-snapshot/"
+    }
+}
+
+dependencies {
+    implementation "com.google.gwt:gwt-dev:2.8.2"
+    implementation "com.google.gwt:gwt-user:2.8.2"
+
+    implementation "org.gwtproject:text:1.0-SNAPSHOT"
+    implementation "org.gwtproject.dom:gwt-dom:1.0-SNAPSHOT"
+    implementation "org.gwtproject.event:gwt-event-dom:1.0-SNAPSHOT"
+    implementation "org.gwtproject.event:gwt-event:HEAD-SNAPSHOT"
+    implementation "org.gwtproject.event:gwt-logical-event:HEAD-SNAPSHOT"
+    implementation "org.gwtproject.i18n:gwt-cldr:1.0-SNAPSHOT"
+    implementation "org.gwtproject.i18n:gwt-datetimeformat:1.0-SNAPSHOT"
+    implementation "org.gwtproject.safehtml:safehtml:1.0-SNAPSHOT"
+
+//
+//    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
+
+task sourcesJar(type: Jar, dependsOn: classes) {
+    classifier = 'sources'
+    from sourceSets.main.allSource
+}
+
+artifacts {
+    archives sourcesJar
+}
