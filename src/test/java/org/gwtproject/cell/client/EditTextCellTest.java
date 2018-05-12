@@ -16,7 +16,6 @@
 package org.gwtproject.cell.client;
 
 import org.gwtproject.cell.client.Cell.Context;
-import org.gwtproject.cell.client.EditTextCell;
 import org.gwtproject.cell.client.EditTextCell.ViewData;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;

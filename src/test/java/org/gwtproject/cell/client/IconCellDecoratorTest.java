@@ -15,14 +15,12 @@
  */
 package org.gwtproject.cell.client;
 
-import org.gwtproject.cell.client.Cell;
+import com.google.gwt.user.client.ui.HasVerticalAlignment;
 import org.gwtproject.cell.client.Cell.Context;
-import org.gwtproject.cell.client.IconCellDecorator;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.NativeEvent;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
-import com.google.gwt.user.client.ui.HasVerticalAlignment;
 
 /**
  * Tests for {@link org.gwtproject.cell.client.IconCellDecorator}.

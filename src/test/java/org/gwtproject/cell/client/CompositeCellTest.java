@@ -15,11 +15,7 @@
  */
 package org.gwtproject.cell.client;
 
-import org.gwtproject.cell.client.Cell;
 import org.gwtproject.cell.client.Cell.Context;
-import org.gwtproject.cell.client.CompositeCell;
-import org.gwtproject.cell.client.FieldUpdater;
-import org.gwtproject.cell.client.HasCell;
 import org.gwtproject.dom.client.Document;
 import org.gwtproject.dom.client.Element;
 import org.gwtproject.dom.client.NativeEvent;

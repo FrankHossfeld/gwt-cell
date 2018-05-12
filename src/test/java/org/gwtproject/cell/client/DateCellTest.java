@@ -15,8 +15,6 @@
  */
 package org.gwtproject.cell.client;
 
-import org.gwtproject.cell.client.Cell;
-import org.gwtproject.cell.client.DateCell;
 import com.google.gwt.i18n.client.DateTimeFormat;
 import com.google.gwt.i18n.client.TimeZone;
 

@@ -15,9 +15,6 @@
  */
 package org.gwtproject.cell.client;
 
-import org.gwtproject.cell.client.ButtonCell;
-import org.gwtproject.cell.client.Cell;
-import org.gwtproject.cell.client.NumberCell;
 import com.google.gwt.i18n.client.NumberFormat;
 
 /**
