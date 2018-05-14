@@ -23,7 +23,6 @@ import org.gwtproject.dom.client.NativeEvent;
 import org.gwtproject.safehtml.client.SafeHtmlTemplates;
 import org.gwtproject.safehtml.shared.SafeHtml;
 import org.gwtproject.safehtml.shared.SafeHtmlBuilder;
-import org.gwtproject.text.shared.SafeHtmlRenderer;
 
 /**
  * An {@link AbstractCell} used to render a text input.
@@ -137,18 +136,6 @@ public class TextInputCell extends
     if (template == null) {
       template = GWT.create(Template.class);
     }
-  }
-
-  /**
-   * Constructs a TextInputCell that renders its text using the given
-   * {@link SafeHtmlRenderer}.
-   *
-   * @param renderer parameter is ignored
-   * @deprecated the value of a text input is never treated as html
-   */
-  @Deprecated
-  public TextInputCell(SafeHtmlRenderer<String> renderer) {
-    this();
   }
 
   @Override

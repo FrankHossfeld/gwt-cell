@@ -47,18 +47,7 @@ public class CheckboxCell extends AbstractEditableCell<Boolean, Boolean> {
    * Construct a new {@link CheckboxCell}.
    */
   public CheckboxCell() {
-    this(false);
-  }
-
-  /**
-   * Construct a new {@link CheckboxCell} that optionally controls selection.
-   *
-   * @param isSelectBox true if the cell controls the selection state
-   * @deprecated use {@link #CheckboxCell(boolean, boolean)} instead
-   */
-  @Deprecated
-  public CheckboxCell(boolean isSelectBox) {
-    this(isSelectBox, isSelectBox);
+    this(false, false);
   }
 
   /**
